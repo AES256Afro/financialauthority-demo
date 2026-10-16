@@ -1,0 +1,1 @@
+var e=`fa.prefs.v1`,t={view:`river`,look:`light`};function n(){try{let n=localStorage.getItem(e);if(!n)return{...t};let r=JSON.parse(n);return{...t,...r}}catch{return{...t}}}function r(t){let r={...n(),...t};try{localStorage.setItem(e,JSON.stringify(r))}catch{}return r}export{r as n,n as t};
